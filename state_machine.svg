@@ -2,12 +2,12 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
 <svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-	<ellipse stroke="black" stroke-width="1" fill="none" cx="43.5" cy="42.5" rx="30" ry="30"/>
+	<ellipse id="start_state" stroke="black" stroke-width="1" fill="none" cx="43.5" cy="42.5" rx="30" ry="30"/>
 	<text x="25.5" y="48.5" font-family="Times New Roman" font-size="20">start</text>
 	<ellipse stroke="black" stroke-width="1" fill="none" cx="43.5" cy="42.5" rx="24" ry="24"/>
 	<ellipse id="foo_state" stroke="black" stroke-width="1" fill="none" cx="43.5" cy="197.5" rx="30" ry="30"/>
 	<text x="30.5" y="203.5" font-family="Times New Roman" font-size="20">foo</text>
-	<ellipse stroke="black" stroke-width="1" fill="none" cx="242.5" cy="197.5" rx="30" ry="30"/>
+	<ellipse id="bar_state" stroke="black" stroke-width="1" fill="none" cx="242.5" cy="197.5" rx="30" ry="30"/>
 	<text x="229.5" y="203.5" font-family="Times New Roman" font-size="20">bar</text>
 	<polygon stroke="black" stroke-width="1" points="43.5,72.5 43.5,167.5"/>
 	<polygon fill="black" stroke-width="1" points="43.5,167.5 48.5,159.5 38.5,159.5"/>
