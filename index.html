@@ -25,8 +25,8 @@
 	    alert("The input value has changed to: " + val);
 	    var svg = document.getElementById("state_machine"); 
 	    var svgDoc = svg.contentDocument;
-	    var this_state = svgDoc.getElementById("foo_state");
-	    foo_state.setAttributeNS(null, "rx", 100);
+	    var foo_state = svgDoc.getElementById("foo_state");
+	    foo_state.setAttribute("rx", 100);
 	}
 	</script>
 
