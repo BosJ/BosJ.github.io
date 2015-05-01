@@ -22,10 +22,16 @@
 
     <script>
 	function highlight_state(val) {
-	    var svg = document.getElementById("state_machine"); 
+		var i;
+	    var svg    = document.getElementById("state_machine"); 
 	    var svgDoc = svg.contentDocument;
-	    var state = svgDoc.getElementById(String(val));
-	    state.setAttribute("fill", "lightblue");
+	    var states = svgDoc.getElementsByTagName("ellipse");
+	    var state  = svgDoc.getElementById(String(val));
+
+	    for	(i = 0; i < states.length; i++) {
+    		states[i].setAttribute("fill", "none");
+		}
+		state.setAttribute("fill", "lightblue");
 	}
 	</script>
 
