@@ -1,39 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
+<script>
+    function show() {
+        document.getElementById("section").style.display = "block"
+    }
+</script>
 
-  <head>
-    <title>Controlling an SVG with Javascript</title>
-  <head>
+<body>
+    <section id="section" style="display: none;">
+        <iframe src="graph.html" width="600" height="400"> </iframe>
+    </section>
+    <button onclick="show()">Show</button>
+</body>
 
-  <body>
-    <h2>Controlling SVG with Javascript</h2>
-
-    <div class="page-content">
-      <div><object id="state_machine" width="500" height="300" type="image/svg+xml" data="state_machine.svg"></object></div>
-
-    Highlight state:
-	<select onchange="highlight_state(value)">
-	  <option value="start_state">start</option>
-	  <option value="foo_state">foo</option>
-	  <option value="bar_state">bar</option>
-	</select>
-
-    </div>
-
-    <script>
-	function highlight_state(val) {
-		var i;
-	    var svg    = document.getElementById("state_machine"); 
-	    var svgDoc = svg.contentDocument;
-	    var states = svgDoc.getElementsByTagName("ellipse");
-	    var state  = svgDoc.getElementById(String(val));
-
-	    for	(i = 0; i < states.length; i++) {
-    		states[i].setAttribute("fill", "none");
-		}
-		state.setAttribute("fill", "lightblue");
-	}
-	</script>
-
-  </body>
 </html>
